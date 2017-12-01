@@ -1,0 +1,35 @@
+.header {
+    padding: 75px 0 100px;
+    min-height: 659px;
+    box-sizing: border-box;
+    background: #ffffff url('../img/header-bg.jpg') repeat-x 50% 100%;
+}
+
+.header__container {
+    max-width: 1156px;
+    margin: 0 auto;
+}
+
+.header__prelogotitle {
+    margin-bottom: 22px;
+    color: #868585;
+    font-family: $font-alt;
+    font-size: 28px;
+    letter-spacing: -0.55px;
+    span {
+        position: relative;
+        border-bottom: 2px solid #626262;
+    }
+}
+
+.header__logotitle {
+    margin-bottom: 19px;
+}
+
+.header__afterlogotitle {
+    float: right;
+    color: #a9271b;
+    font-family: $font-alt;
+    font-size: 53px;
+    letter-spacing: -1.6px;
+}

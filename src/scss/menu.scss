@@ -1,0 +1,128 @@
+.menu {
+    margin-bottom: 50px;
+    background-color: #e5e3e3;
+    border-bottom: 7px solid #ae0000; 
+}
+
+.menu__container {
+    padding-left: 221px;
+    padding-right: 58px;
+}
+
+.menu__logo {
+    margin-right: 21px;
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+    min-height: 62px;
+}
+
+.menu__rate {
+    margin-right: 87px;
+    border-radius: 50%;
+    background-color: #ae0000;
+    color: #ffffff;
+    width: 37px;
+    height: 37px;
+    min-width: 37px;
+    min-height: 37px;
+    text-align: center;
+    line-height: 42px;
+    font-family: $font-alt;
+}
+
+.mainmenu {
+    margin: 0 38px 0 0;
+    padding: 0;
+    li {
+        list-style: none;
+        margin-right: 14px;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            display: block;
+            padding: 42px 24px 33px;
+            color: #000000;
+            letter-spacing: -0.3px;
+            transition: all ease .3s;
+            &:hover {
+                color: #000000;
+                text-decoration: none;
+                background-color: #d7d7d7;
+            }
+        }
+        &.menu-active {
+            a {
+                color: #ffffff;
+                background-color: #ae0000;
+            }
+        }
+    }
+}
+
+.menu__user {
+    display: inline-block;
+    margin-right: 43px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+}
+
+@mixin input-placeholder($color, $bg) {
+    &::-webkit-input-placeholder {
+        color: $color;
+	}
+	&::-moz-placeholder {
+        color: $color;
+	}
+	&:-moz-placeholder {
+        color: $color;
+	}
+	&:-ms-input-placeholder {
+        color: $color;
+    }
+    &:focus::-webkit-input-placeholder {
+        color: $bg;
+	}
+	&:focus::-moz-placeholder {
+        color: $bg;
+	}
+	&:focus:-moz-placeholder {
+        color: $bg;
+	}
+	&:focus:-ms-input-placeholder {
+        color: $bg;
+    }
+}
+
+.menu__search {
+    position: relative;
+    width: 220px;
+    button {
+        position: absolute;
+        background: url('../img/search.svg') no-repeat 50% 50%;
+        background-size: cover;
+        width: 31px;
+        height: 31px;
+        left: 10px;
+        top: 10px;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+    }
+    input {
+        background-color: #636161;
+        color: #fff;
+        border: none;
+        padding-left: 63px;
+        border-radius: 25px;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        font-size: 11px;
+        letter-spacing: -0.22px;
+        @include input-placeholder(#fff,#636161);
+    }
+}
